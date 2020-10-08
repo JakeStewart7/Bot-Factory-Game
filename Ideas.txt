@@ -1,0 +1,110 @@
+Ideas:
+	-- Ally moveToTargetAction goes to building, ignoring other buildings
+SPRINT
+
+
+BACKLOG
+1. Refactor Code
+   -- Interfaces?
+   -- Rethink code architecture
+   -- Plan for scalability, testing
+   -- Use of inheritance/polymorphism for units/buildings
+   -- Reusable functions/logic for units, i.e. targetting scrap, firing, etc
+   -- Cleaning up messy code / classes, condense if possible, performance
+
+1. New name
+2. Create title screen
+3. Title screen music
+
+PLAYTEST FEEDBACK
+4. Balance player characters, 2 too strong
+5. Select and change which building retrievers return to
+6. More robot types
+7. Ally retriever can also follow player and heal?
+8. Upgrade ally robots or have a building that activates once has enough scrap?
+9. Huge enemy boss out of regular sized base
+
+GAMEPLAY ISSUES
+1. -- Map feels too big ?
+2. - Clearer indication of communication ability state change?
+3. -- Feels like more beginning is needed
+4. -- Needs more map awareness given to player
+5. -- Player can backdoor, literally, somewhat easily
+6. Too many ally retrievers
+7. Retrievers not close enough to get scrap
+
+Main Interest Points
+1. Highly cooperative
+2. Infrastructure building
+3. Early struggle / grind
+4. Automation
+5. Critical mass for overwhelming victory
+
+What's needed
+1. Resource system
+2. Bot functions
+	Self building / factory building bots
+3. Player functions
+4. Conflict
+
+Basic Concept
+Players are faced against mass produced bots, must destroy them and
+collect their scrap to build factories and produce own bots. Bots
+will become autonomous and continue to expand your base
+
+Key Ideas
+Scrap - Spawns / Supply / From Robots
+Players/Bots collect and return to base
+Turrets?
+
+
+Coop Ideas
+Defender little robots always follow player, can shoot to send to ally
+
+Misc. Ideas
+Scrap falls from sky
+Player - Homing Rocket Spray Ability
+Units - (Flying?) Scrap Collectors
+	- Defenders: defend bots that need it or base
+Enemy Small Unit - Leap towards player with cooldown
+		 - Charge after nearby scrap
+Factories - Scrap turns into robots at factory
+	    Random spawn, random number, controllable
+
+Considered Ideas
+Shoot own little robots to get them to follow you // What if OP?
+Or shoot them to give them stat boost?
+Small Ally Bots - Defend until following you
+No factories, just switch what type of units being produced
+Enemies die and produce a small unit that carries their scrap back
+   - or separate unit comes with to collect scrap
+Minimap - Small camera looking from afar or midpoint between players
+	: Didn't work out too well, distracting, not much point.
+
+Extra Ideas
+Enemies blow up after a moment of 0 hp
+	Make lasers come from eyes
+	Attack Cooldown GUI timers (i.e. over/on unit or player?)
+Conveyors of some sort
+Music, Sound
+
+TEST
+Shockwave heal affects allies and other players but not self
+Scrap touches base or player w/ scrap attached touches base, turn in
+Shockwave
+
+Known Issues
+Shockwave: If target hits another object while knocked back, keeps velocity
+Retrieving Scrap on top of unit after returning another piece of scrap
+
+ScrapTransfer doesn't send to ally retrieval factory as expected, but
+	uses "Ally Retrieval Factory" to find them, which might change
+	or have (clone) on the end, etc.
+
+Likewise, remember to change name of all created prefabs to get rid of extra
+TransferScrap target with greater than 1 unit cost?
+
+ScrapCollector script OnCollision, if (scrap != null.... removed
+	 && !containsScrap(scrap)
+
+-- Scrap can be blasted outside walls after it hits wall once
