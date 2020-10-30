@@ -1,6 +1,6 @@
 # BotFactory by Jake Stewart
 #
-# To play: Download zip of the repository, extract the file, run the executable
+# To play: Download zip of the repository (~50MB), extract the file, run the executable
 #
 # A top-down, 2D, 2 player, twin-stick arcade game where the players must use their weapon and abilities
 # to destroy the enemy bots and their buildings. Units and buildings drop scrap when destroyed, which can be used
