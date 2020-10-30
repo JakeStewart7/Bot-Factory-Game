@@ -16,10 +16,6 @@
 # Left Bumper       - Dash
 # B                 - Detach Scrap
 #
-#
-#
-#
-#
 # Version:  Prototype
 # Software: Unity, Autodesk SketchBook for art, LMMS for music/sound, and Audacity for sound editing.
 # Language: C#
