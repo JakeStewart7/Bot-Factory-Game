@@ -1,4 +1,4 @@
-# BotFactory by Jake Stewart
+# Bot Factory by Jake Stewart
 #
 # To play: Download zip of the repository (~50MB), extract the file, run the executable. Must be played with a controller.
 #
