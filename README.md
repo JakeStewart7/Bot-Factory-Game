@@ -1,10 +1,11 @@
 # Bot Factory by Jake Stewart
 #
+# Gameplay: https://www.youtube.com/watch?v=TK5rQFxTwKE
+#
 # Code can be found under Assets -> Scripts
 #
 # To play: Download zip of the repository (~50MB), extract the file, run the executable. Must be played with a controller.
 #
-# Gameplay: https://www.youtube.com/watch?v=TK5rQFxTwKE
 #
 # A top-down, 2D, 2 player, twin-stick arcade game where the players must use their weapon and abilities
 # to destroy the enemy bots and their buildings. Units and buildings drop scrap when destroyed, which can be used
